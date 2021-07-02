@@ -19,7 +19,6 @@ mtable = ()=>{
         hrow = document.getElementById('h-row')
         let th = document.createElement('th')
         th.setAttribute('scope','col')
-        console.log(setarr[i])
         th.append(setarr[i]);
         hrow.append(th)
         let tr = document.createElement('tr')
