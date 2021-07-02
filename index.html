@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="main-heading mt-2">Multiplication table of Sets</h1>
+    <div class="all-elements">
+        <div class="elements p-3">
+            <label for="">Enter Operator</label>
+            <input type="text" id='operator'>
+            <br>
+            <label for="">Enter Modulus</label>
+            <input type="text" id='modulus'>
+            <br>         
+            <label for="">Enter set ( Seperated with a Comma , )</label>
+            <input type="text" id='set'>
+            <br>
+            <button id='submit' class="btn btn-dark" onclick="mtable()">Submit</button>
+        </div>
+        
+    </div>
+    <div class="m-table row justify-content-center" id='mtable' style="display: none;">
+        <div class="col-auto">
+            <table class="table table-bordered border-secondary">
+                <thead>
+                <tr id='h-row'>               
+                </tr>
+                </thead>
+                <tbody id='table-body'>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
