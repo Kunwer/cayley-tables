@@ -5,6 +5,8 @@ mtable = ()=>{
     let op = document.getElementById('operator').value
     let set = document.getElementById('set').value
     let tbody = document.getElementById('table-body')
+    document.getElementById('h-row').innerHTML = ''
+    tbody.innerHTML = ''
     if(op == 'x' || op == '*'){
         document.getElementById('h-row').innerHTML = `<th scope="col">x<sub>${mod}</sub></th>`
     }else if(op == '+'){
